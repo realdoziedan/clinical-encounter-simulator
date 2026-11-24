@@ -6,13 +6,21 @@ This is an educational simulator, not clinical decision support. It must not be 
 
 ## Get started
 
-### Fastest: ask an agent to install it
+### One-command install for coding agents
 
-In a coding agent that can access GitHub and install local skills (such as Codex or Claude Code), paste this prompt:
+In Claude Code, run this in a terminal (or ask Claude Code to run it):
 
-> Install the Clinical Encounter Simulator from https://github.com/realdoziedan/clinical-encounter-simulator for the current user of this agent. Follow the platform's current skill-installation instructions. Keep the package's folder structure and supporting references, install only in the current user's personal skills area, and do not overwrite an existing installation without asking me. Verify that the installed skill can find its referenced files. If this agent cannot install persistent skills, explain the shortest supported upload steps instead. Do not set up learner-data storage unless I separately opt in.
+```sh
+npx skills add realdoziedan/clinical-encounter-simulator --skill clinical-encounter-simulator --global --agent claude-code
+```
 
-This works only when the agent has the needed repository access, local-file or installation tools, and permission to make the change. A prompt alone cannot install a skill into a separate ChatGPT or Claude account or bypass that platform's controls.
+For Codex, replace `claude-code` with `codex`. The Vercel Skills CLI fetches the public GitHub repository, discovers its root `SKILL.md`, and installs the skill and its supporting files for the selected agent. The CLI requires Node.js 22.20 or later. See the [CLI documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md).
+
+You can also paste this into Claude Code:
+
+> Install the Clinical Encounter Simulator from https://github.com/realdoziedan/clinical-encounter-simulator for my Claude Code user account. Use the Vercel Skills CLI to install the `clinical-encounter-simulator` skill globally for Claude Code. Check whether it is already installed before replacing anything, verify the install, then run it for a fictional practice encounter. Do not set up learner-data storage unless I separately opt in.
+
+This prompt-based flow works in coding agents that have terminal access and can install local skills. It does not install a skill into a separate Claude.ai or ChatGPT web account; those surfaces use their own skill-upload controls.
 
 ### Install in Claude
 
