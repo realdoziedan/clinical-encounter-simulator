@@ -3,6 +3,9 @@ Use semantic versions: major for incompatible behavior/structure; minor for back
 
 For changes, log rationale, files, clinical/safety impact, reviewer and date. Review clinical content with a qualified educator using current local guidance. Update manual fixtures and paths, run the integrity checker, manually review affected flows, compare preserved source hash, inspect ZIP listing, and record release. Before any public release, confirm the right to redistribute every included source file and inspect the preserved master and package for private, identifying, confidential, or otherwise unintended content. Source preservation does not itself grant redistribution rights.
 
+## 1.4.2 — 2026-11-24
+Added the MIT license and practical sharing, installation, prompt-based setup, and contribution guidance. Clarified that prompt-based installation depends on the agent's platform and available tools.
+
 ## 1.4.1 — 2026-11-24
 Aligned the Python and Node integrity checker file inventories and documented both commands, preventing the Python check from overlooking the newer platform and Drive-store files. Made the persistent-record opt-in condition explicit in the main skill workflow so it cannot be read as permission to track users who declined.
 
