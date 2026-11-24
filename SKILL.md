@@ -1,7 +1,7 @@
 ---
 name: clinical-encounter-simulator
 description: Simulate fictional end-to-end clinical encounters for practice, formative assessment, debrief, and adaptive coaching.
-version: 1.4.1
+version: 1.4.2
 ---
 
 # Clinical Encounter Simulator
