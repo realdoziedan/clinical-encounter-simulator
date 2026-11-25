@@ -1,8 +1,29 @@
 # Clinical Encounter Simulator
 
-**Version 1.5.1** · A portable skill for fictional clinical practice, formative assessment, debrief, adaptive coaching, and learner progress tracking.
+**Version 1.6.0** · Practise real consultations before they count.
+
+The Clinical Encounter Simulator turns your AI assistant into a standardized patient and examiner for medical education. You run the encounter from first question to management plan, as you would in a board exam station or on a real ward, then get a scored debrief and coaching on exactly what to improve. It runs as a skill in Claude, ChatGPT, Codex, Gemini and other AI assistants.
 
 This is an educational simulator, not clinical decision support. It must not be used to diagnose or manage a real patient.
+
+## What it does
+
+- **Realistic fictional patients** across internal medicine, surgery, paediatrics, obstetrics and gynaecology, psychiatry, primary care, emergency and critical care, and infectious and tropical medicine.
+- **The full encounter:** history, examination, investigations, assessment and differential, management with dynamic reassessment, then counselling and follow-up.
+- **Board exam and real-life practice:** set an exam or specialty focus, choose your setting and resources, and practise under exam-style conditions or with coaching.
+- **Scored debrief:** evidence-based feedback on each stage, a separate patient-safety classification, and concrete next steps.
+- **Adaptive difficulty:** five tiers that follow your performance, or a tier you choose.
+- **Progress tracking (opt-in):** a learner profile that remembers your weak areas and picks cases to target them.
+
+## Try saying
+
+> Give me a Tier 3 emergency medicine case. I'll start with the history.
+
+> I'm preparing for my internal medicine board exam. Run an exam-style case and score me at the end.
+
+> Coach me through a paediatric case in a district hospital with limited investigations. Give hints if I get stuck.
+
+> Pick a case that targets my weakest areas so far.
 
 ## Get started
 
@@ -24,11 +45,11 @@ This prompt-based flow works in coding agents that have terminal access and can 
 
 ### Install in Claude
 
-Download the [current ZIP package](https://github.com/realdoziedan/clinical-encounter-simulator/raw/refs/heads/main/Clinical-Encounter-Simulator-1.5.1.zip). In Claude, open **Customize → Skills → + → Create skill → Upload a skill**, select the ZIP, and enable the skill. Skills require Code execution and file creation to be enabled; organization settings may also apply. See [Claude's official instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+Download the [current ZIP package](https://github.com/realdoziedan/clinical-encounter-simulator/raw/refs/heads/main/Clinical-Encounter-Simulator-1.6.0.zip). In Claude, open **Customize → Skills → + → Create skill → Upload a skill**, select the ZIP, and enable the skill. Skills require Code execution and file creation to be enabled; organization settings may also apply. See [Claude's official instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 ### Install in ChatGPT
 
-If Skills are available for your ChatGPT plan and workspace, download the [current ZIP package](https://github.com/realdoziedan/clinical-encounter-simulator/raw/refs/heads/main/Clinical-Encounter-Simulator-1.5.1.zip), then open **Plugins → Skills → Create → Upload from your computer**, select the ZIP, and follow any review prompts. Availability and upload permissions depend on the plan and workspace settings. See [OpenAI's official instructions](https://help.openai.com/en/articles/20001066-skills-in-chatgpt).
+If Skills are available for your ChatGPT plan and workspace, download the [current ZIP package](https://github.com/realdoziedan/clinical-encounter-simulator/raw/refs/heads/main/Clinical-Encounter-Simulator-1.6.0.zip), then open **Plugins → Skills → Create → Upload from your computer**, select the ZIP, and follow any review prompts. Availability and upload permissions depend on the plan and workspace settings. See [OpenAI's official instructions](https://help.openai.com/en/articles/20001066-skills-in-chatgpt).
 
 ### Try it in a single conversation
 
@@ -61,4 +82,4 @@ Please do not include real patient information in issues, discussions, or contri
 
 ## License
 
-Released under the [MIT License](LICENSE). Contributions are accepted under the same license.
+From version 1.6.0, released under [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](LICENSE): you may share and adapt it with credit, but not for commercial purposes. Contributions are accepted under the same license. Versions up to 1.5.1 were released under the MIT License, and copies already obtained under those versions keep those terms.
