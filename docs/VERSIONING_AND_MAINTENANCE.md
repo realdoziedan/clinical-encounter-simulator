@@ -3,6 +3,9 @@ Use semantic versions: major for incompatible behavior/structure; minor for back
 
 For changes, log rationale, files, clinical/safety impact, reviewer and date. Review clinical content with a qualified educator using current local guidance. Update manual fixtures and paths, run the integrity checker, manually review affected flows, compare preserved source hash, inspect ZIP listing, and record release. Before any public release, confirm the right to redistribute every included source file and inspect the preserved master and package for private, identifying, confidential, or otherwise unintended content. Source preservation does not itself grant redistribution rights.
 
+## 1.6.0 — 2026-11-25
+Changed the license from MIT to CC BY-NC 4.0 for this and later versions; earlier versions keep the MIT License. Rewrote the skill description in SKILL.md frontmatter to emphasise medical education, board exam preparation, and real-life clinical encounters, and to say when to use the skill. README now opens with what the simulator does and sample prompts. No clinical or safety content changed.
+
 ## 1.5.1 — 2026-11-25
 Moved the version in SKILL.md frontmatter under `metadata:`. Claude's skill upload rejects a top-level `version` key, so the 1.5.0 package could not be installed there. No clinical or safety content changed.
 
