@@ -1,6 +1,6 @@
 ---
 name: clinical-encounter-simulator
-description: AI clinical encounter simulator built for medical education: practise realistic consultations with fictional patients to prepare for board exams and real-life clinical encounters. Covers history, examination, investigations, diagnosis and management across specialties, then gives a scored debrief and targeted coaching. Use for clinical training, board or licensing exam preparation, or sharpening a specialty. Adapts difficulty (Tier 1-5) to performance and can track progress across sessions if the learner opts in. Educational only, not for real patient care.
+description: AI clinical encounter simulator built for medical education. Practise realistic consultations with fictional patients to prepare for board exams and real-life clinical encounters. Covers history, examination, investigations, diagnosis and management across specialties, then gives a scored debrief and targeted coaching. Use for clinical training, board or licensing exam preparation, or sharpening a specialty. Adapts difficulty (Tier 1-5) to performance and can track progress across sessions if the learner opts in. Educational only, not for real patient care.
 metadata:
   version: "1.6.0"
 ---
