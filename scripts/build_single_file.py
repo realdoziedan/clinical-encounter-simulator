@@ -12,8 +12,8 @@ OUT = ROOT / "dist" / "clinical-encounter-simulator-single.md"
 
 # Runtime files, grouped as SKILL.md routes to them. Left out: README, LICENSE,
 # SOURCE_MASTER_STATUS.md, source-masters/ (kept for traceability, "not
-# required at runtime"), docs/TEST_PLAN.md, docs/VERSIONING_AND_MAINTENANCE.md,
-# tests/, and the release ZIPs.
+# required at runtime"), docs/TEST_PLAN.md, tests/, and the release ZIPs.
+# docs/VERSIONING_AND_MAINTENANCE.md is included as the changelog.
 FILES = [
     "references/CASE_SELECTION.md",
     "references/CONSULTATION_WORKFLOW.md",
@@ -25,6 +25,7 @@ FILES = [
     "docs/USER_GUIDE.md",
     "docs/PLATFORM_ADAPTERS.md",
     "docs/PORTABILITY.md",
+    "docs/VERSIONING_AND_MAINTENANCE.md",
     "templates/LEARNER_PROFILE.md",
     "templates/PROFILE_INDEX.md",
     "templates/PROGRESS_REVIEW.md",

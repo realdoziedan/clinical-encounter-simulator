@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check package integrity
+        run: python tests/validate_package.py
+
       - name: Build single file
         run: python scripts/build_single_file.py
 
