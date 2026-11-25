@@ -3,6 +3,9 @@ Use semantic versions: major for incompatible behavior/structure; minor for back
 
 For changes, log rationale, files, clinical/safety impact, reviewer and date. Review clinical content with a qualified educator using current local guidance. Update manual fixtures and paths, run the integrity checker, manually review affected flows, compare preserved source hash, inspect ZIP listing, and record release. Before any public release, confirm the right to redistribute every included source file and inspect the preserved master and package for private, identifying, confidential, or otherwise unintended content. Source preservation does not itself grant redistribution rights.
 
+## 1.5.0 — 2026-11-25
+Added a single-file edition (`dist/clinical-encounter-simulator-single.md`) for platforms that accept only one skill file. It bundles SKILL.md with the runtime references, docs (including this changelog), and templates, unchanged. Added `scripts/build_single_file.py` to regenerate it and a GitHub Action that reruns the integrity checker and rebuilds the single file on pushes to main. Fixed the Python integrity checker, which reported README links to folders (`references/`, `docs/`, `templates/`, `tests/`, `source-masters/`) as broken. No clinical or safety content changed.
+
 ## 1.4.2 — 2026-11-24
 Added the MIT license and practical sharing, installation, prompt-based setup, and contribution guidance. Clarified that prompt-based installation depends on the agent's platform and available tools.
 

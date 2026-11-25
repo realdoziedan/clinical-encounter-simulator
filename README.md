@@ -1,6 +1,6 @@
 # Clinical Encounter Simulator
 
-**Version 1.4.2** · A portable skill for fictional clinical practice, formative assessment, debrief, adaptive coaching, and learner progress tracking.
+**Version 1.5.0** · A portable skill for fictional clinical practice, formative assessment, debrief, adaptive coaching, and learner progress tracking.
 
 This is an educational simulator, not clinical decision support. It must not be used to diagnose or manage a real patient.
 
@@ -24,11 +24,11 @@ This prompt-based flow works in coding agents that have terminal access and can 
 
 ### Install in Claude
 
-Download the [current ZIP package](https://github.com/realdoziedan/clinical-encounter-simulator/raw/refs/heads/main/Clinical-Encounter-Simulator-1.4.2.zip). In Claude, open **Customize → Skills → + → Create skill → Upload a skill**, select the ZIP, and enable the skill. Skills require Code execution and file creation to be enabled; organization settings may also apply. See [Claude's official instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+Download the [current ZIP package](https://github.com/realdoziedan/clinical-encounter-simulator/raw/refs/heads/main/Clinical-Encounter-Simulator-1.5.0.zip). In Claude, open **Customize → Skills → + → Create skill → Upload a skill**, select the ZIP, and enable the skill. Skills require Code execution and file creation to be enabled; organization settings may also apply. See [Claude's official instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 ### Install in ChatGPT
 
-If Skills are available for your ChatGPT plan and workspace, download the [current ZIP package](https://github.com/realdoziedan/clinical-encounter-simulator/raw/refs/heads/main/Clinical-Encounter-Simulator-1.4.2.zip), then open **Plugins → Skills → Create → Upload from your computer**, select the ZIP, and follow any review prompts. Availability and upload permissions depend on the plan and workspace settings. See [OpenAI's official instructions](https://help.openai.com/en/articles/20001066-skills-in-chatgpt).
+If Skills are available for your ChatGPT plan and workspace, download the [current ZIP package](https://github.com/realdoziedan/clinical-encounter-simulator/raw/refs/heads/main/Clinical-Encounter-Simulator-1.5.0.zip), then open **Plugins → Skills → Create → Upload from your computer**, select the ZIP, and follow any review prompts. Availability and upload permissions depend on the plan and workspace settings. See [OpenAI's official instructions](https://help.openai.com/en/articles/20001066-skills-in-chatgpt).
 
 ### Try it in a single conversation
 

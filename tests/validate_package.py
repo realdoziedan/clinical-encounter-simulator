@@ -12,7 +12,7 @@ for md in ROOT.rglob('*.md'):
     for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', text):
         if target.startswith(('http://','https://','#','mailto:')): continue
         local=target.split('#',1)[0]
-        if local and not (md.parent/local).resolve().is_file():
+        if local and not (md.parent/local).resolve().exists():
             errors.append(f'Broken link in {md.relative_to(ROOT)}: {target}')
 if errors:
     print('\n'.join(errors)); sys.exit(1)
