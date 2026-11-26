@@ -3,6 +3,9 @@ Use semantic versions: major for incompatible behavior/structure; minor for back
 
 For changes, log rationale, files, clinical/safety impact, reviewer and date. Review clinical content with a qualified educator using current local guidance. Update manual fixtures and paths, run the integrity checker, manually review affected flows, compare preserved source hash, inspect ZIP listing, and record release. Before any public release, confirm the right to redistribute every included source file and inspect the preserved master and package for private, identifying, confidential, or otherwise unintended content. Source preservation does not itself grant redistribution rights.
 
+## Unreleased
+Added a Gemini Gem kit (`dist/clinical-encounter-simulator-gemini-gem.zip`): nine Gemini-supported files that keep the package structure within Gemini's 10-file limit, with setup instructions. `scripts/build_gemini_kit.py` builds it and the GitHub Action rebuilds it with the single file. Skill content is unchanged.
+
 ## 1.6.0 — 2026-11-25
 Changed the license from MIT to CC BY-NC 4.0 for this and later versions; earlier versions keep the MIT License. Rewrote the skill description in SKILL.md frontmatter to emphasise medical education, board exam preparation, and real-life clinical encounters, and to say when to use the skill. README now opens with what the simulator does and sample prompts. No clinical or safety content changed.
 

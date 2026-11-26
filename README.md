@@ -71,6 +71,7 @@ Each learner controls their own profile and training records. Persistent trackin
 - [`templates/`](templates/): learner profile and progress/session record templates.
 - [`tests/`](tests/): manual fixtures and executable package-integrity checks.
 - [`source-masters/`](source-masters/): preserved original Library source master.
+- [`dist/`](dist/): ready-made editions, rebuilt automatically on every change: `clinical-encounter-simulator-single.md` (one file, for platforms that accept a single file) and `clinical-encounter-simulator-gemini-gem.zip` (a 9-file Gemini Gem kit with setup instructions).
 
 ## Feedback and contributions
 
