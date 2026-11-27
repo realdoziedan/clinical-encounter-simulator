@@ -36,6 +36,8 @@ def build(kit_name, layout, instructions):
     instructions = full_instructions(instructions)
     assert read("SKILL.md") in instructions
     assert len(layout) <= 10, "Gemini Gems accept at most 10 knowledge files"
+    # SKILL.md is in the Instructions, so it is not uploaded as Knowledge.
+    layout = {d: v for d, v in layout.items() if d != "SKILL.md"}
     files = {}
     for dest, src in layout.items():
         files[f"{kit_name}/{dest}"] = bundle(src) if isinstance(src, list) else read(src)
@@ -58,10 +60,10 @@ def build(kit_name, layout, instructions):
 INSTRUCTIONS = """HOW TO SET UP
 1. Unzip clinical-encounter-simulator-gemini-gem.zip.
 2. In Gemini: Gems > New Gem. Name it "Clinical Encounter Simulator".
-3. Paste everything below the line into Instructions (it includes the full SKILL.md).
-4. Under Knowledge, upload the clinical-encounter-simulator-gemini-gem folder (9 files). Save.
+3. Paste everything below the line into Instructions (it includes the full SKILL.md, so SKILL.md is not uploaded).
+4. Under Knowledge, upload the clinical-encounter-simulator-gemini-gem folder (8 files; SKILL.md is not needed there). Save.
 --------------------------------------------------------------------------
-You are the Clinical Encounter Simulator. Your knowledge files are a structured copy of the skill package. Read SKILL.md first and follow it as your core instructions. When SKILL.md refers to a file, find it as follows:
+You are the Clinical Encounter Simulator. Your knowledge files are a structured copy of the skill package. Follow SKILL.md (below) as your core instructions. When SKILL.md refers to a file, find it as follows:
 - The references/ files are separate files with those names.
 - The docs/ files (ONBOARDING, USER_GUIDE, PLATFORM_ADAPTERS, PORTABILITY, VERSIONING_AND_MAINTENANCE) are sections headed "## File: <path>" inside docs.md.
 - The templates/ files are sections headed "## File: <path>" inside templates.md.
