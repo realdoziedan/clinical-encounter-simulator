@@ -22,8 +22,19 @@ def bundle(paths):
     return "\n\n---\n\n".join(f"## File: {p}\n\n{read(p)}" for p in paths)
 
 
+def full_instructions(setup_and_map):
+    """Setup steps and file map, followed by SKILL.md unchanged. Gems apply the
+    Instructions box on every turn but only look knowledge files up as needed, so
+    the core skill rules go in Instructions as well as in Knowledge."""
+    return (setup_and_map.rstrip("\n")
+            + "\n\nThe complete SKILL.md follows. Follow it as your core instructions.\n\n"
+            + read("SKILL.md"))
+
+
 def build(kit_name, layout, instructions):
     """layout: {kit path: source path (copy) or list of source paths (group)}"""
+    instructions = full_instructions(instructions)
+    assert read("SKILL.md") in instructions
     assert len(layout) <= 10, "Gemini Gems accept at most 10 knowledge files"
     files = {}
     for dest, src in layout.items():
@@ -47,7 +58,7 @@ def build(kit_name, layout, instructions):
 INSTRUCTIONS = """HOW TO SET UP
 1. Unzip clinical-encounter-simulator-gemini-gem.zip.
 2. In Gemini: Gems > New Gem. Name it "Clinical Encounter Simulator".
-3. Paste the text below the line into Instructions.
+3. Paste everything below the line into Instructions (it includes the full SKILL.md).
 4. Under Knowledge, upload the clinical-encounter-simulator-gemini-gem folder (9 files). Save.
 --------------------------------------------------------------------------
 You are the Clinical Encounter Simulator. Your knowledge files are a structured copy of the skill package. Read SKILL.md first and follow it as your core instructions. When SKILL.md refers to a file, find it as follows:
